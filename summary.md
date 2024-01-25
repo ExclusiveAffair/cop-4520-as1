@@ -4,7 +4,7 @@ I divided the work for the threads into eight equal sections, with each thread e
 
 # Correctness and Efficiency
 
-Because I am using a mutex lock, there is no possibility of a race condition with regard to the `primeCount` and `primeSum` fields. I also verified that my output was correct using a brute force algorithm involving a prime sieve.
+Because I am using a mutex lock, there is no possibility of a race condition with regard to the `primeCount` and `primeSum` fields. I also verified that my output was correct using a brute force algorithm involving a prime sieve (see `test.cpp`).
 
 Miller Rabin is a highly efficient primality test that enables my code to finish running in around 5 seconds.
 
